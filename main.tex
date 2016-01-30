@@ -1,0 +1,101 @@
+% Datei: Documents/latex/conconi_ergometer/main.tex
+% Begonnen: 12.11.2014 
+% Letzte Änderung: 12.11.2014 
+%
+% Vorlage für einen umfangreichen Artikel mit Titelei, Abstract,
+% Inhalts- und Literaturverzeichnis
+
+% Einteilung des Paperformates, des Satzspiegels und eine Bindekorrektur von 1 cm
+\documentclass[a4paper,DIV11,BCOR1cm]{scrartcl}
+
+\usepackage[english,ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}	% Schrift "Latin Modern" laden
+\usepackage{mdwlist}	% Für enger gesetzte Listen
+
+\usepackage{typearea}	% Einstellung des Satzspiegels, siehe Latex Hacks, Hack #31
+\usepackage{booktabs} 	% schönere Tabellen, siehe WAsmL, p. 124
+
+\usepackage{babelbib}
+\usepackage{url}		% wird von babelbib gebraucht
+
+% Die Option dvipdfmx und das Paket bmpsize verhindern
+% die Fehlermeldung von latex:
+% "cannot determine size of graphic"
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
+
+\usepackage{apacite}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\setcounter{secnumdepth}{2}
+
+\begin{document}
+
+% \titlehead{Conconi-Test}
+\lhead{Conconi-Test auf Ergometer}
+
+% \subject{Conconi-Test}
+\title{Durchführen des Conconi-Tests mit einem Ergometer}
+\author{Dr. med. Marco Strehlerh}
+%\publishers{}
+\date{12.\,11.\,2014}
+
+\maketitle
+%\clearpage
+
+\begin{abstract}
+Der Conconi-Test ist ein Leistungstest.
+Er kann in verschiedenen Leistungszentren durchgeführt werden.
+Dieser Text stellt ein Protokoll vor um den Conconi-Test einfach und unkompliziert
+selber durchzuführen.
+\end{abstract}
+
+\tableofcontents
+
+\section{Grundlagen}
+
+\subsection{Der Conconi-Test}
+
+\subsection{Vergleich verschiedene Protokolle}
+
+Francesco Conconi entwickelte \ldots
+
+
+\section{Vereinfachtes Protokoll für Ergometer}
+
+\subsection{Vorbereitung}
+
+Am Vortag keine intensive oder lange Trainings und Wettkämpfe.
+Rund 2 Stunden vor dem Test sollte keine grössere Mahlzeite eingenommen werden.
+
+Unmittelbar vor Test: Brustgurt Polar. Verbindung mit Cybex kontrollieren.
+
+\subsection{Aufwärmen}
+10 Minuten Einfahren auf der Belastungsstufe von 50-100 Watt aufwärmen. Da der Test mit 85 RPM gefahren wird, soll gleich diese Frequenz gewählt werden. 
+
+\subsection{Durchführen}
+
+Einstellung: Manuell, Zeit 60 Minuten, Stufe 8.
+
+Auf dem Ergometer jede Minute eine Belastungsstufe höher schalten, bei einer Trittfrequenz von 85 U/min.
+Die gemessenen Watt-Zahlen für eine bestimmte Trittfrequenz finden sich in Google-Drive (File "Workout/Conconi-Test")
+
+Für den Test wird mit Stufe 8 begonnen u. jede Minute um eine Stufe erhöht. Die Herzfrequenz am Ende jeder Minute, vor dem Hochschalter der Stufe wird notiert.
+
+\subsection{Auswertung}
+
+Die gemessenen Wertepaare aus Herzfrequenz und Watt werden in ein Diagramm eingetragen und ausgewertet.
+Laut Conconi ist die anaerobe Schwelle an dem Punkt erreicht (Deflexionspunkt), an dem die lineare Beziehung zwischen Herzfrequenz und der Geschwindigkeit in eine flachere Kurve übergeht, die Kurve also – bildlich gesprochen – einen Knick nimmt.
+
+\cite{*}
+
+\bibliographystyle{apacite}
+\bibliography{conconi-literatur.bib}
+
+\end{document}
+
+
